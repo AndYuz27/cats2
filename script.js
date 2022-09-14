@@ -50,7 +50,7 @@ form.addEventListener("submit", (e) => {
         }
         console.log(body)
     }
-    fetch("http://sb-cats.herokuapp.com/api/2/andy1337/add",{
+    fetch("https://sb-cats.herokuapp.com/api/2/andy1337/add",{
         method: "POST",
         headers: {
         "Accept": "application/json",
