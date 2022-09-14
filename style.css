@@ -1,0 +1,56 @@
+.container{
+    width: 1024px;
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       grid-column-gap: 10px;
+       grid-row-gap: 1em;
+       padding-top: 30px;
+    
+        }
+        .card{
+            width: 20em;
+            height:25em;
+            background-color: gainsboro;
+            border-radius: 15px;
+            box-shadow: 0 0 15px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-img{
+            width: 12em;
+            height: 12em;
+            background-color: gray;
+            background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+        }
+        .header{
+            background-color:bisque;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;padding-left: 15px;
+            padding-right: 15px;
+        }
+        body{
+            margin: 0;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        h4{
+            padding: 0;
+            margin: 1px;
+        }
+        .jj{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+        }
+        p{
+            margin: 0;
+            padding: 1px;
+        }
