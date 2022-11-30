@@ -16,17 +16,17 @@
     <form id="addCat">
         <span>добавить</span>
         <br>
-        <input type="text" placeholder="Макс" name="name">
+        <input type="text" placeholder="Имя Кошки" name="name">
         <br>
-        <input type="number" placeholder="id" name="id">
+        <input type="number" placeholder="id" name="id" required="required">
         <br>
         <input type="url" placeholder="image link" name="img_link">
         <br>
         <input type="text" placeholder="описание" name="description">
         <br>
-        <input type="number" placeholder="рейтинг" name="rate">
+        <input type="number" placeholder="рейтинг" name="rate" max="10" min="1">
         <br>
-        <input type="number" placeholder="возраст кота" name="age">
+        <input type="number" placeholder="возраст кота" name="age" min="1">
         <br>
         <button type="submit">Добавить Кота</button>
     </form>

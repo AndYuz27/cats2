@@ -7,10 +7,12 @@
 "description": "описание",
 "img_link": "ссылка на картинку в интернете"
 } */
+let api = "andtop" // старый API с ExpoJS
+api = "andy1337" // Новый API
 const box = document.querySelector(".container");
 
 const getCats = function(){ //IIFE
-    fetch(" https://sb-cats.herokuapp.com/api/2/andy1337/show")
+    fetch(`https://sb-cats.herokuapp.com/api/2/${api}/show`)
     .then(res => res.json())
     .then(data => {
         data.data.forEach(el => {
@@ -50,7 +52,7 @@ form.addEventListener("submit", (e) => {
         }
         console.log(body)
     }
-    fetch("https://sb-cats.herokuapp.com/api/2/andy1337/add",{
+    fetch(`https://sb-cats.herokuapp.com/api/2/${api}/add`,{
         method: "POST",
         headers: {
         "Accept": "application/json",
@@ -65,6 +67,7 @@ form.addEventListener("submit", (e) => {
         if(data.message === "ok"){
             box.innerHTML = ""
             alert('кот добавлен')
+            window.location.replace("/"); // для Localhost
         }
     })
 })
