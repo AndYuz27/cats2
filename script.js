@@ -7,9 +7,26 @@
 "description": "описание",
 "img_link": "ссылка на картинку в интернете"
 } */
+
+/*
+Отобразить всех котов
+GET http://sb-cats.herokuapp.com/api/2/<name>/show
+
+Отобразить все id котов
+GET http://sb-cats.herokuapp.com/api/2/<name>/ids
+
+Получить информацию об одном котике по id
+GET http://sb-cats.herokuapp.com/api/2/<name>/show/<id кота>
+
+Добавить нового кота в БД (id, name - обязательно!)
+POST http://sb-cats.herokuapp.com/api/2/<name>/add
+* */
 let api = "andtop" // старый API с ExpoJS
 api = "andy1337" // Новый API
 const box = document.querySelector(".container");
+const ddd = window.location
+console.log(ddd)
+
 
 const getCats = function(){ //IIFE
     fetch(`https://sb-cats.herokuapp.com/api/2/${api}/show`)
@@ -28,6 +45,7 @@ let card = `
         <span>${el.rate}/10</span>
         <span>ID: ${el.id}</span>
         <p>${el.description}</p>
+        <a href="/pageofcat.html?${el.id}">see more</a>
         <br>
     </div>`;
 box.innerHTML += card;

@@ -7,6 +7,13 @@
        padding-top: 30px;
     
         }
+        .eeee{
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         .card{
             width: 20em;
             height:25em;
@@ -26,7 +33,25 @@
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
+      
         }
+        .card-img_b{
+            width: 42em;
+            height: 32em;
+            background-color: gray;
+            background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      border-radius: 15px;
+      
+        }
+        .card_of_cat{
+            background-color: cyan;
+            padding: 25px;
+
+        }
+        
         .header{
             background-color:bisque;
             display: flex;
